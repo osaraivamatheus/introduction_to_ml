@@ -28,7 +28,7 @@ For this problem it was created a python class that have methods to do all of th
 
 ## Modelling
 
-Since the EDA it's already made, it is possible to choose the possible models to modelling the data. In this exemple, the main task is to predict if a passenger survived or not, i.e., a binary classification problem. **A very useful tip: always start with the simpliest model.** Candidate models are:
+Since the EDA it's already made, it is possible to choose the models for data. In this exemple, the main task is to predict if a passenger survived or not, i.e., a binary classification problem. **A very useful tip: always start with the simpliest model.** Candidate models are:
 
 - Logistic regression
 - Naive Bayes classification
