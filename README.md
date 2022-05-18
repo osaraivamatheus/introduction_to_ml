@@ -45,6 +45,8 @@ For each possible model there are many parameters and hiperparameters to be esti
 
 One way to find the hiperparameters of a model is by the [Cross Validation technique](https://scikit-learn.org/stable/modules/cross_validation.html). In the Titanic problem, all the hiperparameters were estimated throught the [GridSerachCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) method in the Scikit Learn, setted up throught the script [tunning_hiperparameters.py](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/tunning_hiperparameters.py). This script save, for each model, all the best parameters found via cross validation on the exention .joblib. The hiperparametrized models are saved in the folder ["modelling/hiperparameters"](https://github.com/osaraivamatheus/titanic_with_Sklearn/tree/main/modelling/hiperparameters).
 
+A very very important thing to be connsidered about hiperparametrization process is the evaluation metrics. There are many of them and it is important to know what they are when to use each one of them.
+
 ### Training models
 
 Alright! Now we have all the hiperparameters for each choosen models. The next step is to train those models usings this hiperparameters to estimate all the "normal" parameters (ex.: the $\beta$'s in a logistic regression)
