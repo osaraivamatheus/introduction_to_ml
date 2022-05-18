@@ -30,11 +30,14 @@ For this problem it was created a python class that have methods to do all of th
 
 Since the EDA it's already made, it is possible to choose the models for data. In this exemple, the main task is to predict if a passenger survived or not, i.e., a binary classification problem. **A very useful tip: always start with the simpliest model.** Candidate models are:
 
+**Simple models**:
 - Logistic regression
 - Naive Bayes classification
-- Random Forest
+
+**More complex models**
 - Multilayer Perceptron (NN)
-- Extreme Gradiente Boosting (XGB)
+- Random Forest
+- Extreme Gradient Boosting (XGB)
 
 ### Hiperparametrization
 
@@ -42,7 +45,9 @@ For each possible model there are many parameters and hiperparameters to be esti
 
 One way to find the hiperparameters of a model is by the [Cross Validation technique](https://scikit-learn.org/stable/modules/cross_validation.html). In the Titanic problem, all the hiperparameters were estimated throught the [GridSerachCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) method in the Scikit Learn, setted up throught the script [tunning_hiperparameters.py](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/tunning_hiperparameters.py). This script save, for each model, all the best parameters found via cross validation on the exention .joblib. The hiperparametrized models are saved in the folder ["modelling/hiperparameters"](https://github.com/osaraivamatheus/titanic_with_Sklearn/tree/main/modelling/hiperparameters).
 
+### Training models
 
+Alright! Now we have all the hiperparameters for each choosen models. The next step is to train those models usings this hiperparameters to estimate all the "normal" parameters (ex.: the $\beta$'s in a logistic regression)
 
 
 
