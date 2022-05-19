@@ -51,7 +51,7 @@ A very very important thing to be connsidered about hiperparametrization process
 
 ### Training models
 
-Alright! Now we have a set of hiperparameters for each choosen models. The next step is to train those models usings this hiperparameters to estimate all the "normal" parameters (ex.: the beta's in a logistic regression). This step is what defines a supervised model class, i.e, have a labelled data set available to train some models. There are at least other two types of machine learning models, such unsupervised and the reinforcement learning models. For more about that, I highly recomend to watch the [Alexander Amini classes from MIT](http://introtodeeplearning.com/).
+Alright! Now we have a set of hiperparameters for each choosen models. The next step is to train those models usings this hiperparameters to estimate all the "normal" parameters (ex.: the $\beta's$ in a logistic regression). This step is what defines a supervised model class, i.e, have a labelled data set available to train some models. There are at least other two types of machine learning models, such unsupervised and the reinforcement learning models. For more about that, I highly recomend to watch the [Alexander Amini classes from MIT](http://introtodeeplearning.com/).
 
 To train our models using a set of hiperparameters previously estimated, we'll use the class ml_fitting from the script [fit.py](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/modelling/fit.py) in the folder "modelling/". On this python class there are some methods to train and evaluate a set of choosen models according to some pre defined metrics. A very good way to start thinking about evaluation metrics for binary classification is following the [flowchart](https://machinelearningmastery.com/tour-of-evaluation-metrics-for-imbalanced-classification/):
 
@@ -63,12 +63,6 @@ The training steps are explained on the noteboook [Compare_models.ipynb](https:/
 ### Making predictions
 
 At this moment, we've know the datasets, made EDA, choosen some classification models, hiperparametrized them, save them, train and compare all of them. Thus, we are now on the final step of a modelling process: the predictions, and we will use the best model to make it. For this purpose, we'll use the method *do_it* from the class *predict_from_load_model* to generate predictions. We could use a loaded model directly to make predicitons, but using this class brings some advantages, such as saving Id informations and show easily the hiperparameters. All of this activities are explained on the [predictions.ipynb notebook](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/predictions.ipynb). 
-
-
-
-
-
-
 
 
 
