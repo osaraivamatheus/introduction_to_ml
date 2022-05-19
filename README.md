@@ -1,6 +1,8 @@
-# Introduction to Sklearn models: a kaggle competition
+# Introduction to classification modelling: a kaggle competition
 
-This repository was created to introduce machine learning modeling with scikit learn for begginers. For this purpose, a Kaggle competition is used to explain what are the most classical steps in a classification modelling problem. 
+This repository was created to introduce machine learning modeling process begginers. For this purpose, a Kaggle competition is used to explain what are the most classical steps in a classification modelling problem. 
+
+The python scripts and jupyter notebooks created uses many methods from libraries like [Pandas](https://pandas.pydata.org/), [Numpy](https://numpy.org/) as [Scikit Learn](https://scikit-learn.org/stable/).  
 
 ## The problem
 
@@ -56,9 +58,14 @@ To train our models using a set of hiperparameters previously estimated, we'll u
 ![How-to-Choose-a-Metric-for-Imbalanced-Classification-latest](https://user-images.githubusercontent.com/34166879/169283235-1a748519-1fec-4705-9eac-e8b0b1e9bfbc.png)
 
 
-The training steps is explained on the noteboook [Compare_models.ipynb](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/Compare_models.ipynb). This notebook will train and save the choosen models.
+The training steps are explained on the noteboook [Compare_models.ipynb](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/Compare_models.ipynb). This notebook will train and save the choosen models. Also, it is shown all the available metrics to evaluate and compare the performance of each model. 
 
 ### Making predictions
+
+At this moment, we've know the datasets, made EDA, choosen some classification models, hiperparametrized them, save them, train and compare all of them. Thus, we are now on the final step of a modelling process: the predictions, and we will use the best model to make it. For this purpose, we'll use the method *do_it* from the class *predict_from_load_model* to generate predictions. We could use a loaded model directly to make predicitons, but using this class brings some advantages, such as saving Id informations and show easily the hiperparameters. All of this activities are explained on the [predictions.ipynb notebook](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/predictions.ipynb). 
+
+
+
 
 
 
