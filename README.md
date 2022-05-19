@@ -43,13 +43,26 @@ Since the EDA it's already made, it is possible to choose the models for data. I
 
 For each possible model there are many parameters and hiperparameters to be estimated. The hiperparameters refers to the parameters that is related to the learning algorithm of each model. For exemple, in a neural network model, the number of hidden layers and nodes, learning hate, batch size are hiperparameters. 
 
-One way to find the hiperparameters of a model is by the [Cross Validation technique](https://scikit-learn.org/stable/modules/cross_validation.html). In the Titanic problem, all the hiperparameters were estimated throught the [GridSerachCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) method in the Scikit Learn, setted up throught the script [tunning_hiperparameters.py](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/tunning_hiperparameters.py). This script save, for each model, all the best parameters found via cross validation on the exention .joblib. The hiperparametrized models are saved in the folder ["modelling/hiperparameters"](https://github.com/osaraivamatheus/titanic_with_Sklearn/tree/main/modelling/hiperparameters).
+One way to find the hiperparameters of a model is by the [Cross Validation technique](https://scikit-learn.org/stable/modules/cross_validation.html). In the Titanic problem, all the hiperparameters were estimated throught the [GridSerachCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) method in the Scikit Learn, setted up throught the script [tunning_hiperparameters.py](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/tunning_hiperparameters.py). This script save, for each model, all the best parameters found via cross validation on the extention .joblib. The hiperparametrized models are saved in the folder ["modelling/hiperparameters"](https://github.com/osaraivamatheus/titanic_with_Sklearn/tree/main/modelling/hiperparameters).
 
 A very very important thing to be connsidered about hiperparametrization process is the evaluation metrics. There are many of them and it is important to know what they are when to use each one of them.
 
 ### Training models
 
-Alright! Now we have all the hiperparameters for each choosen models. The next step is to train those models usings this hiperparameters to estimate all the "normal" parameters (ex.: the $\beta$'s in a logistic regression)
+Alright! Now we have a set of hiperparameters for each choosen models. The next step is to train those models usings this hiperparameters to estimate all the "normal" parameters (ex.: the beta's in a logistic regression). This step is what defines a supervised model class, i.e, have a labelled data set available to train some models. There are at least other two types of machine learning models, such unsupervised and the reinforcement learning models. For more about that, I highly recomend to watch the [Alexander Amini classes from MIT](http://introtodeeplearning.com/).
+
+To train our models using a set of hiperparameters previously estimated, we'll use the class ml_fitting from the script [fit.py](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/modelling/fit.py) in the folder "modelling/". On this python class there are some methods to train and evaluate a set of choosen models according to some pre defined metrics. A very good way to start thinking about evaluation metrics is following the [flowchart](https://machinelearningmastery.com/tour-of-evaluation-metrics-for-imbalanced-classification/):
+
+![How-to-Choose-a-Metric-for-Imbalanced-Classification-latest](https://user-images.githubusercontent.com/34166879/169283235-1a748519-1fec-4705-9eac-e8b0b1e9bfbc.png)
+
+
+The training steps is explained on the noteboook [Compare_models.ipynb](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/Compare_models.ipynb). This notebook will train and save the choosen models.
+
+### Making predictions
+
+
+
+
 
 
 
