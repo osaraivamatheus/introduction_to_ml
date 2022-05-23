@@ -4,13 +4,22 @@ This repository was created to introduce machine learning modeling process beggi
 
 The python scripts and jupyter notebooks created uses many methods from libraries like [Pandas](https://pandas.pydata.org/), [Numpy](https://numpy.org/) as [Scikit Learn](https://scikit-learn.org/stable/).  
 
+To all of this make sense to the reader, please follow these reading order:
+
+1. This Readme file.
+2. [EDA notebook](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/EDA.ipynb).
+3. Run the [hiperparametrization script](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/tunning_hiperparameters.py).
+4. [Comparison models notebook](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/Compare_models.ipynb).
+5. Make predictions and export it this [notebook](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/Make_predictions.ipynb).
+
+
 ## The problem
 
 Basically, we need to build a model to predict which passengers survived the Titanic shipwreck. To do that, we will use some machine learning models that belongs to the supervised learning class of artificial intelligence. For more information about this competition and datasets, [check this link](https://www.kaggle.com/competitions/titanic).
 
 ## Exploratory data analisys
 
-One of the most important steps on a modelling process is the Exploratory Data Analisys (EDA). Data distribution, data quality, new insights, variability analisys are made with EDA. This is importante because according to this analisys many other possibilities can arise, such as possibile models, inclusion of new variables, exclusion of unecessary variables and many other pre process tranformation. The EDA of this problem is found on EDA.ipynb file.
+One of the most important steps on a modelling process is the Exploratory Data Analisys (EDA). Data distribution, data quality, new insights, variability analisys are made with EDA. This is importante because according to this analisys many other possibilities can arise, such as possibile models, inclusion of new variables, exclusion of unecessary variables and many other pre process tranformation. The EDA of this problem is found on [EDA.ipynb](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/EDA.ipynb) file.
 
 ## Pre processing data
 
@@ -62,7 +71,7 @@ The training steps are explained on the noteboook [Compare_models.ipynb](https:/
 
 ### Making predictions
 
-At this moment, we've know the datasets, made EDA, choosen some classification models, hiperparametrized them, save them, train and compare all of them. Thus, we are now on the final step of a modelling process: the predictions, and we will use the best model to make it. For this purpose, we'll use the method *do_it* from the class *predict_from_load_model* to generate predictions. We could use a loaded model directly to make predicitons, but using this class brings some advantages, such as saving Id informations and show easily the hiperparameters. All of this activities are explained on the [predictions.ipynb notebook](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/predictions.ipynb). 
+At this moment, we've know the datasets, made EDA, choosen some classification models, hiperparametrized them, save them, train and compare all of them. Thus, we are now on the final step of a modelling process: the predictions, and we will use the best model to make it. For this purpose, we'll use the method *do_it* from the class *predict_from_load_model* to generate predictions. We could use a loaded model directly to make predicitons, but using this class brings some advantages, such as saving Id informations and show easily the hiperparameters. All of this activities are explained on the [Make_predictions.ipynb notebook](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/Make_predictions.ipynb). 
 
 
 
