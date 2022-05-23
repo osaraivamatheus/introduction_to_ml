@@ -73,6 +73,7 @@ The training steps are explained on the noteboook [Compare_models.ipynb](https:/
 
 At this moment, we've know the datasets, made EDA, choosen some classification models, hiperparametrized them, save them, train and compare all of them. Thus, we are now on the final step of a modelling process: the predictions, and we will use the best model to make it. For this purpose, we'll use the method *do_it* from the class *predict_from_load_model* to generate predictions. We could use a loaded model directly to make predicitons, but using this class brings some advantages, such as saving Id informations and show easily the hiperparameters. All of this activities are explained on the [Make_predictions.ipynb notebook](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/Make_predictions.ipynb). 
 
+Repeating exactly the steps showed here, you'll reach a 0.75 scoring on the Kaggle Titanic Competition. But, you can try to increase this performance! My tip is to look closer to evaluation metrics used to train the models.
 
 
 
