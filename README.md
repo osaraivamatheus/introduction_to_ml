@@ -15,7 +15,7 @@ To all of this make sense to the reader, please follow these reading order:
 
 ## The problem
 
-Basically, we need to build a model to predict which passengers survived the Titanic shipwreck. To do that, we will use some machine learning models that belongs to the supervised learning class of artificial intelligence. For more information about this competition and datasets, [check this link](https://www.kaggle.com/competitions/titanic).
+Basically, we need to build a model to predict which passengers survived the Titanic shipwreck. To do that, we will use some machine learning models that belongs to the supervised learning class of artificial intelligence. For more information about this competition and datasets [check this link](https://www.kaggle.com/competitions/titanic).
 
 ## Exploratory data analisys
 
