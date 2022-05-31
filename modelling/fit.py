@@ -23,17 +23,10 @@ from sklearn.metrics import roc_auc_score, f1_score, fbeta_score, recall_score
 # Pre processing
 from .pre_process import pre_processing
 
-# For plotting
-import matplotlib.pyplot as plt
-
-# For graphs
-import networkx as nx
-
 # Timing
 import datetime
 
 # Save and load
-# from pickle import dump, load
 from joblib import dump, load
 
 
