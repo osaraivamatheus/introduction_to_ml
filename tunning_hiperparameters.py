@@ -141,7 +141,7 @@ df.select_columns(
 )  ## selecting features
 df.Create_I_Matrix()  # create incidence matrix
 df.Standardize()  # standardizing data
-#df.FactorCategorical()  # labeling categorical featuers
+# df.FactorCategorical()  # labeling categorical featuers
 df.RemoveOutliers()  # removing outliers
 df.fill_nan_ols("Age")  # fill nan values with regression
 train, test = train_test_split(

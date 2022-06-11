@@ -15,10 +15,8 @@ from sklearn.naive_bayes import BernoulliNB
 from xgboost import XGBClassifier
 
 # Predicton performance
-from sklearn import model_selection
-from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
-from sklearn.metrics import roc_auc_score, f1_score, fbeta_score, recall_score
+from sklearn.metrics import roc_auc_score, fbeta_score, recall_score
 
 # Pre processing
 from .pre_process import pre_processing
@@ -242,6 +240,7 @@ class ml_fitting:
 
         self.comparison = df
 
+
 class predict_from_load_model:
     def __init__(self, X_test, choosen_models):
         self.X_test = X_test
@@ -251,25 +250,25 @@ class predict_from_load_model:
 
     def do_it(self):
         """
-        This functions make predictions of a data set given some loaded trained model. 
-        
+        This functions make predictions of a data set given some loaded trained model.
+
         Parameters:
         -----------
         X_test: pd.DataFrame.
                 DataFrame contaning the features to be classified.
-        
+
         choosen_models: list
                         List of models that will make the predictions. If None all
                         the available models will be used. The available values are:
                         'Logistic', 'Naive_Bayes','Random_Forest', 'MLP', 'XGBoost'
-                        and 'SVC'.  
-                        
+                        and 'SVC'.
+
         Return:
         -------
         DataFrame.
-        
+
         """
-        
+
         predictions = {}
 
         # Load available hiperparametrizated trained models

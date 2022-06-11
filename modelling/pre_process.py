@@ -3,14 +3,10 @@ import pandas as pd
 import numpy as np
 
 # Data pre processing
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder, StandardScaler, OneHotEncoder
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import IsolationForest
 from sklearn.feature_selection import SelectKBest
 from sklearn.linear_model import LogisticRegression, LinearRegression
-
-# Oversampling
-from imblearn.over_sampling import SMOTENC
 
 
 class pre_processing:
@@ -215,10 +211,10 @@ class pre_processing:
     def fill_nan_ols(self, y):
         """
         This function fill NaN values throughout an OLS regression estimation.
-        
+
         Parameters:
         ----------
-        
+
         y: array
            Array to be predicted.
         """

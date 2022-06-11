@@ -2,7 +2,11 @@
 
 This repository was created to introduce machine learning modeling process begginers. For this purpose, a Kaggle competition is used to explain what are the most classical steps in a classification modelling problem. 
 
-The python scripts and jupyter notebooks created uses many methods from libraries like [Pandas](https://pandas.pydata.org/), [Numpy](https://numpy.org/) as [Scikit Learn](https://scikit-learn.org/stable/).  
+The python scripts and jupyter notebooks created uses many methods from libraries such as [Pandas](https://pandas.pydata.org/), [Numpy](https://numpy.org/) as [Scikit Learn](https://scikit-learn.org/stable/). To install all of these dependencies run the code:
+
+```bash
+    pip install -r requirements.txt
+```
 
 To all of this make sense to the reader, please follow these reading order:
 
