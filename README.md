@@ -1,14 +1,14 @@
 # Introduction to classification modelling: a kaggle competition
 
-This repository was created to introduce machine learning modeling process begginers. For this purpose, a Kaggle competition is used to explain what are the most classical steps in a classification modelling problem. 
+This repository was created to introduce machine learning modeling process to begginers. For this purpose, a Kaggle competition is used to explain what are the most classical steps in a classification modelling problem. 
 
-The python scripts and jupyter notebooks created uses many methods from libraries such as [Pandas](https://pandas.pydata.org/), [Numpy](https://numpy.org/) as [Scikit Learn](https://scikit-learn.org/stable/). To install all of these dependencies run the code:
+The python scripts and jupyter notebooks created uses many methods from libraries such as [Pandas](https://pandas.pydata.org/), [Numpy](https://numpy.org/) and [Scikit Learn](https://scikit-learn.org/stable/). To install all of these dependencies run the code:
 
 ```bash
     pip install -r requirements.txt
 ```
 
-To all of this make sense to the reader, please follow these reading order:
+For a clear understanding experience please follow these reading order:
 
 1. This Readme file.
 2. [EDA notebook](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/EDA.ipynb).
@@ -23,7 +23,7 @@ Basically, we need to build a model to predict which passengers survived the Tit
 
 ## Exploratory data analisys
 
-One of the most important steps on a modelling process is the Exploratory Data Analisys (EDA). Data distribution, data quality, new insights, variability analisys are made with EDA. This is importante because according to this analisys many other possibilities can arise, such as possibile models, inclusion of new variables, exclusion of unecessary variables and many other pre process tranformation. The EDA of this problem is found on [EDA.ipynb](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/EDA.ipynb) file.
+One of the most important steps on a modelling process is the Exploratory Data Analisys (EDA). Data distribution, data quality, new insights and variability analisys are made with EDA. This is importante because according to EDA many other possibilities can arise, such as possibile models, inclusion of new variables, exclusion of unecessary variables and many other pre process tranformation. The EDA of this problem is found on [EDA.ipynb](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/EDA.ipynb) file.
 
 ## Pre processing data
 
@@ -37,13 +37,13 @@ In the case of Titanic competition, the pre processing transformations applied o
 4. Remove outliers;
 5. Fill missing values.
 
-Again, the tranformations used in the pre processing steps are specific to each problem of modelling and, obviously, it may change a lot.
+Again, the tranformations used in the pre processing steps are specific to each modelling problem and, obviously, it may change a lot.
 
-For this problem it was created a python class that have methods to do all of those particular pre processing steps. This class is created on the script ["modelling/pre_process.py"](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/modelling/pre_process.py).
+For the current problem it was created a python class that have methods to do all of those particular pre processing steps. This class is created on the script ["modelling/pre_process.py"](https://github.com/osaraivamatheus/titanic_with_Sklearn/blob/main/modelling/pre_process.py).
 
 ## Modelling
 
-Since the EDA it's already made, it is possible to choose the models for data. In this exemple, the main task is to predict if a passenger survived or not, i.e., a binary classification problem. **A very useful tip: always start with the simpliest model.** Candidate models are:
+Once EDA it's already made, it is possible to choose the models for data. In this exemple, the main task is to predict if a passenger survived or not, i.e., a binary classification problem. **A very useful tip: always start with the simpliest model.** Candidate models are:
 
 **Simple models**:
 - Logistic regression
